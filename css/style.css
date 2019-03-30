@@ -1,0 +1,192 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+  .container{
+    display:flex;
+    max-width:100%
+  }
+  
+  .container aside{
+    display:flex;
+    justify-content:center;
+    height:100vh;
+    border:1px solid lightgray;
+    position:relative;
+    width:200px;
+    overflow:hidden;
+  }
+  
+    .container aside:before {
+      content: "";
+      width: 100%;
+      height: 20%;
+      position: absolute;
+      background-color: #f6cb66;
+  
+  }
+  
+  
+  .container aside .content{
+    width:200px;
+    align-self:center;
+    position:absolute;
+    padding:10px;
+    top:30%;
+    left:0%;
+    
+  }
+  .container aside .logo{
+  width: 120%;
+   height: 30%;
+    background-color:white;
+    position:absolute;
+    top:10%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius: 60%;
+    transform:rotate(-30deg)
+  }
+  
+  .container aside .logo img{
+    width:130px;
+    height:auto;
+    transform:rotate(30deg)
+  
+  }
+  .container aside .content div{
+    padding-bottom:30px;
+    display:flex;
+    align-items:center;
+    cursor:pointer;
+    position:relative;
+    padding:15px;
+  }
+  .container aside .content div:hover{
+    background-color:#fcfcfc;
+  }
+  .container aside .content div:before{
+    content:"";
+    width:5%;
+    height:99%;
+    background-color:#029ba0;
+    position:absolute;
+    top:0;
+    left:0; 
+    transform:translateX(-100%) ;
+    opacity:0
+     
+  }
+  
+  .container aside .content div:hover:before{
+    opacity:1
+  }
+  
+  
+  
+  .container aside .content span img{
+    width:30px;
+   padding-right:10px ;
+    color:transparent;
+  }
+  
+  section{
+    width:100%;
+    height:100vh;
+    background-color:#fcfcfc;
+    padding:20px;
+  }
+  
+  section .box{
+    width:100%;
+    height:83%;
+    background-color:white;
+    border-radius:10px;
+    border: 1px solid lightgray;
+  box-shadow: 0px 3px 21px -15px;
+  }
+  section .login{
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+    padding-bottom:30px
+  }
+  
+  section .login .login_name{
+    color:#029ba0;
+    font-family:sans-serif;
+    text-align:center
+  }
+  .login_subs{
+    color:#4a4a4a;
+  }
+  
+  section .profile{
+    width:50px;
+    height:50px;
+    background-color:lightgray;
+    border-radius:50%;
+    margin:10px
+  }
+  
+  section .box{
+    padding:20px;
+    overflow:scroll
+  }
+  
+  section .box header{
+    color:#f6cb66;
+    font-family:sans-serif;
+  }
+  
+  section .box_button{
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    margin-top: 20px
+  }
+  section .box header .box_subs{
+    margin-top:10px;
+    margin-left:2px
+  }
+  
+  section .box .box_button div span img{
+    width:20px;
+    margin-right:10px
+  }
+  
+  section .box .box_button div{
+    padding:5px 15px;
+    border-radius:5px;
+    background-color:lightgray;
+    margin:10px;
+    margin-left:0;
+    display:flex;
+    align-items:center;
+    text-transform:uppercase;
+    font-size:10px
+  }
+  
+  section .box .box_button .button_checklist{
+    color:#c79022
+  }
+  section .box .box_button .button_baixar{
+    color:#4bb0b8
+  }
+  
+  .instrucao{
+    background-color:lightgray
+  }
+  
+  .instrucao .instrucao-box{
+    display:flex;
+    align-items:center;
+    padding:10px
+  }
+  
+  .instrucao .instrucao-box input{
+    margin-right:10px
+  }
+  
