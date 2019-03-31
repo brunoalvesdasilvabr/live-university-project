@@ -29,12 +29,14 @@
   
   
   .container aside .content{
-    width:200px;
-    align-self:center;
-    position:absolute;
-    padding:10px;
-    top:30%;
-    left:0%;
+    width:100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-self: center;
+    position: absolute;
+    top: 30%;
+    left: 0%;
     
   }
   .container aside .logo{
@@ -51,18 +53,25 @@
   }
   
   .container aside .logo img{
-    width:130px;
+    width:72%;
     height:auto;
     transform:rotate(30deg)
   
   }
   .container aside .content div{
+      width:100%; 
     padding-bottom:30px;
     display:flex;
     align-items:center;
     cursor:pointer;
     position:relative;
     padding:15px;
+  }
+  .container aside .content div h6:hover{
+  font-weight: bold
+}
+.container aside .content div h6{
+    font-weight: 100;
   }
   .container aside .content div:hover{
     background-color:#fcfcfc;
@@ -75,7 +84,7 @@
     position:absolute;
     top:0;
     left:0; 
-    transform:translateX(-100%) ;
+    transform:translateX(-42%) ;
     opacity:0
      
   }
@@ -133,10 +142,10 @@
   
   section .box{
     padding:20px;
-    overflow:scroll
+    overflow:auto
   }
   
-  section .box header{
+  section .box .headerstyle{
     color:#f6cb66;
     font-family:sans-serif;
   }
@@ -149,7 +158,7 @@
   }
   section .box header .box_subs{
     margin-top:10px;
-    margin-left:2px
+    margin-left:2px;
   }
   
   section .box .box_button div span img{
@@ -166,7 +175,8 @@
     display:flex;
     align-items:center;
     text-transform:uppercase;
-    font-size:10px
+    font-size:10px;
+    cursor: pointer
   }
   
   section .box .box_button .button_checklist{
@@ -177,7 +187,9 @@
   }
   
   .instrucao{
-    background-color:lightgray
+    background-color:lightgray;
+    z-index:-1 ;
+
   }
   
   .instrucao .instrucao-box{
@@ -189,4 +201,152 @@
   .instrucao .instrucao-box input{
     margin-right:10px
   }
+
+  .button_add{
+    display:flex;
+    align-items:center;
+    color:#c79022;
+    padding:5px 15px;
+    background-color:lightgray; 
+    border-radius:5px;
+    cursor: pointer;
+    margin:10px
+  }
   
+  .button_add a span img{
+      width:15px;
+      margin-right:10px;
+  }
+
+  .headtable{
+    font-family:sans-serif;
+    color:#4bb0b8;
+    padding:10px;
+    display:flex;
+    align-items:center;
+    flex-wrap: wrap;
+    justify-content: space-around
+  }
+
+  .search-form{
+      border:.5px solid lightgray;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:3px 10px;
+      background-color:#fbfbfb;
+      border-radius:7px;
+  }
+  .search-form input{
+      width:90%;
+      height:100%;
+      border:none;
+      outline: none;
+      background-color:#fbfbfb
+  }
+  .search-form a{
+      background-color:none;
+      border:none;
+      width:16px;
+      cursor: pointer;
+  }
+
+
+
+  .modal{
+      display:none;
+      align-items:center;
+      justify-content:center;
+      transition: all 1s;
+      animation:popup .5s 1;
+      transform:scale(1);
+  }
+  
+
+  @keyframes popup{
+      0%{transform:scale(0)};
+      100%{transform:scale(1)}
+  }
+  .modal .modalform{
+      border:1px solid lightgray;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 1px 1px 10px;
+      position:relative;
+      background-color: white;
+      margin-top: -189px;
+
+  }
+
+  .modal .modalform .close{
+    background-color:white;
+    width:30px;
+    height: 30px;
+    position:absolute;
+    top:5px;
+    right:5px;
+    cursor:pointer;
+}
+
+  .modal form input{
+      width:40%;
+  }
+
+  .modal form button{
+      margin:10px
+  }
+
+  table{
+    width: 100%;
+  }
+ 
+
+  .list tbody tr{
+      background-color:white;
+      display:flex;
+      align-items:center;
+      justify-content: space-around;
+      border-bottom:1px solid lightgray ;
+      flex-wrap: wrap;
+ 
+  }
+
+  .list tbody tr td:nth-child(1){
+    font-weight: bold
+ }
+  .list tbody tr td:nth-child(2)::before{
+   content:"Cargo:";
+    font-size: 10px;
+    margin-top:-10px;
+    display: block;
+}
+
+.list tbody tr td:nth-child(3)::before{
+    content:"Empresa:";
+    font-size: 10px;
+     width: 100%;
+     height: 100%;
+     margin-top:-10px;
+     display: block;
+ }
+  .list tbody tr td{
+      padding:10px;
+  }
+
+  .btn{
+    padding: 5px 16px;
+    background-color: lightgray;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin:5px
+    
+  }
+  .open_button{
+      color:#029ba0;
+  }
+
+  .remove_button{
+    color: #c48a15;
+  }
+
+

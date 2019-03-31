@@ -15,10 +15,10 @@
           </div>
           <div class="content">
               <div class="colaboradores">
-                      <span><img src="https://image.flaticon.com/icons/svg/33/33308.svg" alt="icone colaboradores"></span>Colaboradores
+                      <span><img src="https://image.flaticon.com/icons/svg/33/33308.svg" alt="icone colaboradores"></span><h6>Colaboradores</h6>
               </div>
               <div class="cursos">
-                        <span><img src="https://image.flaticon.com/icons/svg/149/149369.svg" alt="icone cursos"></span>Cursos
+                        <span><img src="https://image.flaticon.com/icons/svg/149/149369.svg" alt="icone cursos"></span><h6>Cursos</h6>
               </div>
           </div>
         </aside>
@@ -32,7 +32,7 @@
             </div>
           </div>
           <div class="box">
-            <header>
+            <header class="headerstyle">
               14 Praticas de Negociação
               <h6 class="box_subs"> 03 agosto de 2016</h6>
             </header>
@@ -51,22 +51,84 @@
                 </label>
               </div>
               <div class="instrucao-box">
-                <input type="checkbox"><label><h6>Instrução 1</h6>
+                <input type="checkbox"><label><h6>Instrução 2</h6>
+                <h6 class="login_subs">algumas observações sobre esta instrução</h6>
+                </label>
+              </div>
+              
+              <div class="instrucao-box">
+                <input type="checkbox"><label><h6>Instrução 3</h6>
                 <h6 class="login_subs">algumas observações sobre esta instrução</h6>
                 </label>
               </div>
               <div class="instrucao-box">
-                <input type="checkbox"><label><h6>Instrução 1</h6>
-                <h6 class="login_subs">algumas observações sobre esta instrução</h6>
-                </label>
-              </div>
-              <div class="instrucao-box">
-                <input type="checkbox"><label><h6>Instrução 1</h6>
+                <input type="checkbox"><label><h6>Instrução 4</h6>
                 <h6 class="login_subs">algumas observações sobre esta instrução</h6>
                 </label>
               </div>
             </div>
+
+            <div class="modal">
+                    <form class="modalform" onsubmit="event.preventDefault();onFormSubmit()" autocomplete="off">
+                         <div class="edit-grid">
+                             <label>Nome</label><br>
+                             <input required type="text" name="name" id="name">
+                         </div>
+                         <div class="edit-grid">
+                                <label>Email</label><br>
+                                <input required type="email" name="email" id="email">
+                            </div>
+                         <div class="edit-grid">
+                             <label>Cargo</label><br>
+                             <input required type="text" name="cargo" id="cargo">
+                         </div>
+                         <div class="edit-grid">
+                             <label>Empresa</label><br>
+                             <input required type="text" name="empresa" id="empresa">
+                         </div>
+                         <button type="submit">Enviar</button>
+                         <div class="close">X</div>
+                   </form>
+               </div>
+   
+            <header class="headtable">
+                <div class="colabhead">
+                    Colaboradores
+                </div>
+
+                    <div class="button_add">
+                            <a><span><img src="https://image.flaticon.com/icons/svg/149/149156.svg" alt=" icone adicionar"></span>
+                            Adicionar</a>
+                    </div>
+                    <form class="search-form">
+                        <input type="text" placeholder="Pequisar">
+                        <a type="submit"><img src="https://image.flaticon.com/icons/svg/126/126474.svg" alt="search icon">
+                        </a>
+                     </form>
+            </header>
+
+            <table>
+                <tr>        
+                    <td>
+                            <table class="list" id="tableList">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                             </table>
+  
+                    </td>
+                </tr>
+            </table>
           </div>
+         
         </section>
       </div>
       <script src="js/index.js"></script>
