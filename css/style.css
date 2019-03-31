@@ -180,7 +180,7 @@
   section .box .box_button div{
     padding:5px 15px;
     border-radius:5px;
-    background-color:lightgray;
+    background-color:#f5f5f5;
     margin:10px;
     margin-left:0;
     display:flex;
@@ -199,7 +199,7 @@
   }
   
   .instrucao{
-    background-color:lightgray;
+    background-color: #fafafa;
     z-index:-1 ;
 
   }
@@ -219,7 +219,7 @@
     align-items:center;
     color:#c79022;
     padding:5px 8px;
-    background-color:lightgray; 
+    background-color:#f5f5f5; 
     border-radius:5px;
     cursor: pointer;
     margin:10px
@@ -321,7 +321,7 @@
       display:flex;
       align-items:center;
       justify-content: space-between;
-      border-bottom:1px solid lightgray ;
+      border-bottom:1px solid #f5f5f5 ;
       flex-wrap: wrap;
       padding:10px;
  
@@ -351,7 +351,7 @@
 
   .btn{
     padding: 5px 16px;
-    background-color: lightgray;
+    background-color: #f5f5f5;
     border-radius: 5px;
     text-transform: uppercase;
     margin:5px;
