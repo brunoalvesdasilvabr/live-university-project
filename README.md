@@ -1,6 +1,6 @@
-#Live University
+##Live University
 
-Getting Started/
+##Getting Started
 These file is a Front-end coding test, when opening you will be able to add a row to the grid after filling out the inputs 
 Check the responsiveness for all kind of devices
 
