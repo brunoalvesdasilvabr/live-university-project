@@ -218,7 +218,7 @@
     display:flex;
     align-items:center;
     color:#c79022;
-    padding:5px 15px;
+    padding:5px 8px;
     background-color:lightgray; 
     border-radius:5px;
     cursor: pointer;
@@ -240,7 +240,7 @@
     display:flex;
     align-items:center;
     flex-wrap: wrap;
-    justify-content: space-between
+    justify-content: space-around
   }
 
   .search-form{
