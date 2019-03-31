@@ -75,6 +75,8 @@
 .container aside .content div h6{
     font-family: sans-serif;
     font-weight: 100;
+    font-size: 9px;
+
   }
   .container aside .content div:hover{
     background-color:#fcfcfc;
@@ -363,5 +365,4 @@
   .remove_button{
     color: #c48a15;
   }
-
 
