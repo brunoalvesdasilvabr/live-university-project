@@ -3,10 +3,14 @@
     padding:0;
     box-sizing:border-box;
   }
+
+
   .container{
     display:flex;
     max-width:100%
   }
+
+/* estilização do aside */
   
   .container aside{
     display:flex;
@@ -67,14 +71,17 @@
     position:relative;
     padding:15px;
   }
-  .container aside .content div h6:hover{
-  font-weight: bold
-}
+
 .container aside .content div h6{
+    font-family: sans-serif;
     font-weight: 100;
   }
   .container aside .content div:hover{
     background-color:#fcfcfc;
+  }
+  .container aside .content div:hover h6{
+    font-weight: bold
+
   }
   .container aside .content div:before{
     content:"";
@@ -101,6 +108,8 @@
     color:transparent;
   }
   
+
+        /* .............Section */
   section{
     width:100%;
     height:100vh;
@@ -129,7 +138,7 @@
     text-align:center
   }
   .login_subs{
-    color:#4a4a4a;
+    color:#9e9e9e;
   }
   
   section .profile{
@@ -182,6 +191,7 @@
   section .box .box_button .button_checklist{
     color:#c79022
   }
+
   section .box .box_button .button_baixar{
     color:#4bb0b8
   }
@@ -211,6 +221,10 @@
     border-radius:5px;
     cursor: pointer;
     margin:10px
+  }
+
+  .button_add:active{
+    transform:translateY(2px)
   }
   
   .button_add a span img{
@@ -305,9 +319,10 @@
       background-color:white;
       display:flex;
       align-items:center;
-      justify-content: space-around;
+      justify-content: space-between;
       border-bottom:1px solid lightgray ;
       flex-wrap: wrap;
+      padding:10px;
  
   }
 
@@ -338,8 +353,8 @@
     background-color: lightgray;
     border-radius: 5px;
     text-transform: uppercase;
-    margin:5px
-    
+    margin:5px;
+    cursor:pointer;
   }
   .open_button{
       color:#029ba0;
