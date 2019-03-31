@@ -371,3 +371,12 @@
       font-size: 7px;
   }
   }
+
+  @media only screen and (max-width: 513px) {
+    section .box .box_button div {
+      width: 105px;
+    }
+  }
+
+
+ 
