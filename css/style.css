@@ -366,3 +366,8 @@
     color: #c48a15;
   }
 
+  @media only screen and (max-width: 344px) {
+    .container aside .content div h6 {
+      font-size: 6px;
+  }
+  }
